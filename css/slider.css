@@ -1,0 +1,18 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css";
+
+body { font-family: avenir, sans-serif; }
+
+.flex-caption { 
+  background: tomato; 
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+}
+
+.flexslider .slides img {
+    max-height: 500px; /*maximum height for all slides*/
+    width: auto; /*proper aspect ratio of images*/
+    max-width: 100%; /*maximum width for all slides*/
+    margin: 0 auto; /*centering images in the container*/
+}
