@@ -23,8 +23,9 @@ description: A virtual place for future reference!
 
 # List of links in the navigation bar
 navbar-links:
-  #About Me: "aboutme"
-  #Resources:
+  About Me: "about"
+  #Research: "research"
+  #Posts:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
@@ -39,6 +40,13 @@ navbar-links:
 # then specify the following parameter
 # title-img:
 
+# --- Manually set collections --- #
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+    
 # --- Background colour/image options --- #
 
 # By default, the navigation bar and footer have a light gray background, and the main page
@@ -73,6 +81,9 @@ author:
   telephone: yourphone   # eg. +14159998888
   steam: yourname     # eg. daattali
   twitch: yourname    # eg. daattali
+  gscholar: ramisetti
+  researchgate: sbramisetti
+  orcid: ramisetti
   yelp: yourname      # eg. daattali
 
 # Select which links to show in the footer
@@ -94,6 +105,9 @@ footer-links-active:
   telephone: false
   steam: false
   twitch: false
+  gscholar: true
+  researchgate: true
+  orcid: true
   yelp: false
 
 # Select which share links to show in posts

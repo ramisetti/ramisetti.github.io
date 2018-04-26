@@ -190,6 +190,40 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.gscholar and site.footer-links-active.gscholar %}
+          <li>
+            <a href="https://scholar.google.com/citations?user=M9oPJDcAAAAJ&hl=en" title="gscholar">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="ai ai-google-scholar fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitch</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.researchgate and site.footer-links-active.researchgate %}
+          <li>
+            <a href="https://www.researchgate.net/profile/Sb_Ramisetti" title="researchgate">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="ai ai-researchgate fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitch</span>
+            </a>
+          </li>
+          {% endif %}
+	  {% if site.author.orcid and site.footer-links-active.orcid %}
+          <li>
+            <a href="https://orcid.org/0000-0002-2927-5257" title="orcid">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<i class="ai ai-orcid fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitch</span>
+            </a>
+          </li>
+          {% endif %}
+	  
       {% if site.author.yelp and site.footer-links-active.yelp %}
           <li>
             <a href="https://{{ site.author.yelp }}.yelp.com" title="Yelp">
