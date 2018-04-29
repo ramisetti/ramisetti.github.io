@@ -24,7 +24,7 @@ description: A virtual place for future reference!
 # List of links in the navigation bar
 navbar-links:
   About Me: "about"
-  #Research: "research"
+  Research: "research"
   #Posts:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
