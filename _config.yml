@@ -25,11 +25,12 @@ description: A virtual place for future reference!
 navbar-links:
   About Me: "about"
   Research: "research"
-  #Posts:
+  Posts:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
   Publications: "publications"
+  How-to: "how-to"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -46,6 +47,9 @@ collections:
   research:
     output: true
     permalink: /research/:path/
+  how-to:
+    output: true
+    permalink: /how_to/:path/
     
 # --- Background colour/image options --- #
 
@@ -64,27 +68,27 @@ collections:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Srinivasa Ramisetti
-  email: "s.b.ramisetti@leeds.ac.uk"
-  facebook: yourname  # eg. daattali
-  github: ramisetti    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
+  name: Srinivasa B. Ramisetti
+  email: "9049630+ramisetti@users.noreply.github.com"
+  facebook: yourname  # eg. ramisetti
+  github: ramisetti    # eg. ramisetti
+  twitter: yourname   # eg. ramisetti
+  reddit: yourname    # eg. ramisetti
+  google-plus: +yourname   # eg. +ramisetti or 109424658772469020925
+  linkedin: yourname  # eg. ramisetti
+  xing: yourname      # eg. ramisetti
+  stackoverflow: yourlink  # eg. "3943160/ramisetti"
+  snapchat: yourname  # eg. ramisetti
+  instagram: yourname # eg. ramisetti
+  youtube: yourlink   # eg. user/ramisetti or channel/ramisetti
+  spotify: yourname   # eg. ramisetti
   telephone: yourphone   # eg. +14159998888
-  steam: yourname     # eg. daattali
-  twitch: yourname    # eg. daattali
+  steam: yourname     # eg. ramisetti
+  twitch: yourname    # eg. ramisetti
   gscholar: ramisetti
   researchgate: sbramisetti
   orcid: ramisetti
-  yelp: yourname      # eg. daattali
+  yelp: yourname      # eg. ramisetti
 
 # Select which links to show in the footer
 footer-links-active:
