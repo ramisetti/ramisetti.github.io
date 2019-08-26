@@ -17,7 +17,7 @@ baseurl: ""
 title: S.B.Ramisetti
 
 # Short description of your site
-description: A virtual place for future reference!
+description: For future reference!
 
 # --- Navigation bar options --- #
 
@@ -25,7 +25,7 @@ description: A virtual place for future reference!
 navbar-links:
   About Me: "about"
   Research: "research"
-  Posts:
+  # Posts:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
@@ -49,8 +49,13 @@ collections:
     permalink: /research/:path/
   how-to:
     output: true
-    permalink: /how_to/:path/
-    
+    permalink: /how-to/:path/
+    compile:
+      output: true
+      permalink: /how-to/compile:path/
+    linux:
+      output: true
+      permalink: /how-to/linux:path/
 # --- Background colour/image options --- #
 
 # By default, the navigation bar and footer have a light gray background, and the main page
@@ -69,7 +74,8 @@ collections:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Srinivasa B. Ramisetti
-  email: "9049630+ramisetti@users.noreply.github.com"
+  #email: "9049630+ramisetti@users.noreply.github.com"
+  email: "ramisettisrinivas@yahoo.com"
   facebook: yourname  # eg. ramisetti
   github: ramisetti    # eg. ramisetti
   twitter: yourname   # eg. ramisetti
