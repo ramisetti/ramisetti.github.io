@@ -19,7 +19,7 @@
     </a>
 
     <p class="post-meta">
-      Published : {{ item.date | date: "%B %-d, %Y" }}
+      Published : {{ item.created | date: "%B %-d, %Y" }}
       {% if item.revised !=null %} 
       ,  Last Revision : {{item.revised | date: "%B %-d, %Y"}}
       {% endif %}

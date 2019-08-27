@@ -3,6 +3,7 @@ layout: how2
 title: OpenFOAM using ARM and CRAY-MPICH compilers - Part II (v5.x)
 subtitle: On Isambard
 group: compile
+created: 26/08/2019
 revised: 27/08/2019
 ---
 
