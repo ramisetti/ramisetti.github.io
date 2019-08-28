@@ -1,10 +1,10 @@
 ---
 layout: how2
-title: OpenFOAM using ARM and CRAY-MPICH compilers - Part II (v5.x)
+title: Compile OpenFOAM v5.x on ARM
 subtitle: On Isambard
 group: compile
 created: 26/08/2019
-revised: 27/08/2019
+revised: 28/08/2019
 ---
 
 Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
