@@ -74,8 +74,7 @@ collections:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Srinivasa B. Ramisetti
-  #email: "9049630+ramisetti@users.noreply.github.com"
-  email: "ramisettisrinivas@yahoo.com"
+  email: "9049630+ramisetti@users.noreply.github.com"
   facebook: yourname  # eg. ramisetti
   github: ramisetti    # eg. ramisetti
   twitter: yourname   # eg. ramisetti
