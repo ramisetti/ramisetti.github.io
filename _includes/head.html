@@ -5,6 +5,9 @@
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+  {% feed_meta %}
+  {% seo %}
+  
   <meta name="google-site-verification" content="MM23ofl65gLe26y_L-fWCwi_i4DCoMseaxjexEvvZuw" />
   <meta name="author" content="{{ site.author.name }}" />
 
