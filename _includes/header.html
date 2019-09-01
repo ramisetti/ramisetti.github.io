@@ -55,6 +55,13 @@
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
+		  {% if include.type == "howto" %}
+                  <span class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}
+		    {% if page.revised !=null %}
+		    ; Last Revised on : {{page.revised | date: "%B %-d, %Y"}}
+		    {% endif %}
+		  </span>
+                  {% endif %}
         </div>
       </div>
     </div>
@@ -80,6 +87,13 @@
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
+		  {% if include.type == "howto" %}
+                  <span class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}
+		    {% if page.revised !=null %}
+                    ; Last Revised on {{page.revised | date: "%B %-d, %Y"}}
+                    {% endif %}
+		  </span>
+                  {% endif %}
         </div>
       </div>
     </div>

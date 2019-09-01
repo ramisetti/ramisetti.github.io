@@ -3,7 +3,7 @@ layout: how2
 title: Compile OpenFOAM v1812 on ARM
 subtitle: On Isambard
 group: compile
-created: 26/08/2019
+date: 26/08/2019
 revised: 28/08/2019
 ---
 

@@ -499,6 +499,22 @@ footer .theme-by {
   font-weight: 300;
   margin-bottom: 10px;
 }
+
+.howto-heading .howto-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.howto-preview .post-meta,
+.howto-heading .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: #808080;
@@ -618,20 +634,35 @@ footer .theme-by {
 .intro-header .page-heading {
   text-align: center;
 }
+
+.intro-header.big-img .howto-heading,
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
   padding: 100px 0;
   color: #FFF;
   text-shadow: 1px 1px 3px #000;
 }
+
+.intro-header .howto-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 50px;
 }
+.intro-header .howto-heading h1,
 .intro-header .post-heading h1 {
   margin-top: 0;
   font-size: 35px;
 }
+
+.intro-header .howto-heading .howto-subheading {
+  font-size: 27px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
   font-size: 27px;
@@ -641,14 +672,23 @@ footer .theme-by {
   font-weight: 300;
   margin: 10px 0 0;
 }
+
+.intro-header .howto-heading .howto-subheading,
 .intro-header .post-heading .post-subheading {
   margin-bottom: 20px;
 }
+
+.intro-header.big-img .howto-heading .howto-subheading,
 .intro-header.big-img .page-heading .page-subheading,
 .intro-header.big-img .post-heading .post-subheading {
   font-weight: 400;
 }
 .intro-header.big-img .page-heading hr {
+  box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  -moz-box-shadow: 1px 1px 3px #000;
+}
+.intro-header.big-img .howto-heading hr {
   box-shadow: 1px 1px 3px #000;
   -webkit-box-shadow: 1px 1px 3px #000;
   -moz-box-shadow: 1px 1px 3px #000;
@@ -674,6 +714,8 @@ footer .theme-by {
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
+  
+  .intro-header.big-img .howto-heading,
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
     padding: 150px 0;
@@ -681,6 +723,8 @@ footer .theme-by {
   .intro-header .page-heading h1 {
     font-size: 80px;
   }
+
+  .intro-header .post-heading h1,
   .intro-header .post-heading h1 {
     font-size: 50px;
   }

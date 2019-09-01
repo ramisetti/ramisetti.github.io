@@ -19,9 +19,9 @@
     </a>
 
     <p class="post-meta">
-      Published : {{ item.created | date: "%B %-d, %Y" }}
+      Published on {{ item.date| date: "%B %-d, %Y" }}
       {% if item.revised !=null %} 
-      ,  Last Revision : {{item.revised | date: "%B %-d, %Y"}}
+      ;  Last Revised on {{item.revised | date: "%B %-d, %Y"}}
       {% endif %}
     </p>
 
