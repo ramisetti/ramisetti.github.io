@@ -1,7 +1,7 @@
 ---
 layout: page
-title: compile 
-subtitle: compile
+title: Building codes
+subtitle: simplified..
 exclude: true
 ---
 
