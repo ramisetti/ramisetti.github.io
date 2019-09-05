@@ -1,13 +1,12 @@
 ---
 layout: how2
-title: Compile OpenFOAM v1812 on ARM
+title: Compile OpenFOAM v1812 with ARM
 subtitle: On Isambard
 group: compile
 date: 26/08/2019
-revised: 28/08/2019
+revised: 05/09/2019
 ---
-
-Instructions to build OpenFOAM-v1812 on Isambard
+In this article, I will present easy to follow intructions to build OpenFOAM v1812 with ARM and CRAY-MPICH compilers on Isambard, which is a Tier 2 HPC facility for UK-based researchers<sup>[1](#1)</sup>. Below are the instructions to build OpenFOAM-v1812 with ARM compiler on Isambard HPC.
 
 1. Download OpenFOAM-v1812 and ThirdParty-v1812
   ```sh
@@ -19,7 +18,7 @@ Instructions to build OpenFOAM-v1812 on Isambard
      tar -xvf OpenFOAM-v1812.tgz -C $BUILD_DIR 
      tar -xvf ThirdParty-v1812.tgz -C $BUILD_DIR
   ```
-2. Load ARM compilers
+2. Load ARM compilers<sup>[2](#2)</sup>
   ```sh
     # load ARM compiler if no compilers are loaded
     module load PrgEnv-allinea/6.0.5
@@ -46,3 +45,13 @@ Instructions to build OpenFOAM-v1812 on Isambard
     # Compile openfoam using all available processors (-j) with reduced output (-s) and log the output (-l) to a file so that we can examine any compilation issues later.
     ./Allwmake -j -s -l
   ```
+
+**References:**
+<br>
+<a id="1"></a>[1]: [https://gw4.ac.uk/isambard](https://gw4.ac.uk/isambard)
+<br>
+<a id="2"></a>[2]: [https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam](https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam)
+<br>
+<a id="3"></a>[3]: [https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-5.x/CentOS_SL_RHEL](https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-5.x/CentOS_SL_RHEL)
+<br>
+<a id="4"></a>[4]: [https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-6.x/CentOS_SL_RHEL](https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-6.x/CentOS_SL_RHEL)

@@ -1,10 +1,10 @@
 ---
 layout: how2
-title: Compile OpenFOAM v5.x on ARM
+title: Compile OpenFOAM v5.x with ARM
 subtitle: On Isambard
 group: compile
 date: 26/08/2019
-revised: 28/08/2019
+revised: 05/09/2019
 ---
 
 Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
