@@ -7,7 +7,7 @@ date: 26/08/2019
 revised: 05/09/2019
 ---
 In this article, I will present easy to follow intructions to build OpenFOAM v1812 with ARM and CRAY-MPICH compilers on Isambard, which is a Tier 2 HPC facility for UK-based researchers<sup>[1](#1)</sup>. Below are the instructions to build OpenFOAM-v1812 with ARM compiler on Isambard HPC.
-
+<br>
 1. Download OpenFOAM-v1812 and ThirdParty-v1812
   ```sh
      BUILD_DIR=$HOME/OpenFOAM
@@ -18,6 +18,7 @@ In this article, I will present easy to follow intructions to build OpenFOAM v18
      tar -xvf OpenFOAM-v1812.tgz -C $BUILD_DIR 
      tar -xvf ThirdParty-v1812.tgz -C $BUILD_DIR
   ```
+  &#13;
 2. Load ARM compilers<sup>[2](#2)</sup>
   ```sh
     # load ARM compiler if no compilers are loaded
@@ -25,6 +26,7 @@ In this article, I will present easy to follow intructions to build OpenFOAM v18
     # or swap current cray compiler with arm compiler
     module switch PrgEnv-cray/6.0.5 PrgEnv-allinea/6.0.5
   ```
+  &#13;
 3. Make modifications to the configuration files required to build OF
   ```sh
     # Download the two patch files and apply the patch running the below commands
@@ -36,6 +38,7 @@ In this article, I will present easy to follow intructions to build OpenFOAM v18
     cd $BUILD_DIR/OpenFOAM-v1812
     echo -e "WM_COMPILER=Arm \nWM_MPLIB=CRAY-MPICH \nWM_LABEL_SIZE=64" > $BUILD_DIR/etc/prefs.sh
   ```
+  &#13;
 4. Compile OpenFOAM-v1812
   ```sh
     # source configuration file
@@ -45,7 +48,7 @@ In this article, I will present easy to follow intructions to build OpenFOAM v18
     # Compile openfoam using all available processors (-j) with reduced output (-s) and log the output (-l) to a file so that we can examine any compilation issues later.
     ./Allwmake -j -s -l
   ```
-
+  &#13;
 **References:**
 <br>
 <a id="1"></a>[1]: [https://gw4.ac.uk/isambard](https://gw4.ac.uk/isambard)

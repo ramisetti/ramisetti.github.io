@@ -8,7 +8,7 @@ date: 06/09/2019
 ---
 
 Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
-
+<br>
 1. Download OpenFOAM-7 and ThirdParty-7
    ```sh
      BUILD_DIR=$HOME/OpenFOAM
@@ -16,7 +16,8 @@ Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
      cd $BUILD_DIR
      git clone https://github.com/OpenFOAM/OpenFOAM-7.git
      git clone https://github.com/OpenFOAM/ThirdParty-7.git
-  ```
+   ```
+   &#13;
 2. Load ARM compiler<sup>[1](#1)</sup>
    ```sh
     # load ARM compiler if no compilers are loaded
@@ -41,7 +42,7 @@ Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
     echo -e "include \$(GENERAL_RULES)/mplibMPICH" > wmake/rules/General/mplibCRAY-MPICH
     cp -r $BUILD_DIR/OpenFOAM-7/wmake/rules/linux64Clang $BUILD_DIR/OpenFOAM-7/wmake/rules/linuxAArch64Clang
    ```
-   
+   &#13;
 3. Download and apply patch to the configuration files
    ```sh
     # Download the two patch files and apply the patch running the below commands
@@ -50,6 +51,7 @@ Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
     (cd $BUILD_DIR/OpenFOAM-7/; patch -p1 < $BUILD_DIR/OpenFOAM-7.patch)
     (cd $BUILD_DIR/ThirdParty-7/; patch -p1 < $BUILD_DIR/ThirdParty-7.patch)
    ```
+   &#13;
 4. Compile OpenFOAM-7
    ```sh
     # source configuration file
@@ -57,7 +59,7 @@ Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
     # Compile openfoam using all available processors (-j).
     ./Allwmake -j 64
    ```
-   
+   &#13;
 **References:**
 <br>
 <a id="1"></a>[1]: [https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam](https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam)

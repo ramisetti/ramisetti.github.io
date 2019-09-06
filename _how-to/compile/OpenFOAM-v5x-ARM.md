@@ -8,7 +8,7 @@ revised: 05/09/2019
 ---
 
 Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
-
+<br>
 1. Download OpenFOAM-5.x and ThirdParty-5.x
    ```sh
      BUILD_DIR=$HOME/OpenFOAM
@@ -16,7 +16,8 @@ Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
      cd $BUILD_DIR
      git clone https://github.com/OpenFOAM/OpenFOAM-5.x.git
      git clone https://github.com/OpenFOAM/ThirdParty-5.x.git
-  ```
+   ```
+   &#13;
 2. Load ARM compiler<sup>[1](#1)</sup> (To use GNU compiler, follow steps in [Section A](#SectionA))
    ```sh
     # load ARM compiler if no compilers are loaded
@@ -41,7 +42,7 @@ Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
     echo -e "include \$(GENERAL_RULES)/mplibMPICH" > wmake/rules/General/mplibCRAY-MPICH
     cp -r $BUILD_DIR/OpenFOAM-5.x/wmake/rules/linux64Clang $BUILD_DIR/OpenFOAM-5.x/wmake/rules/linuxAArch64Clang
    ```
-   
+   &#13;
 3. Download and apply patch to the configuration files
    ```sh
     # Download the two patch files and apply the patch running the below commands
@@ -50,6 +51,7 @@ Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
     (cd $BUILD_DIR/OpenFOAM-5.x/; patch -p1 < $BUILD_DIR/OpenFOAM-5x.patch)
     (cd $BUILD_DIR/ThirdParty-5.x/; patch -p1 < $BUILD_DIR/ThirdParty-5x.patch)
    ```
+   &#13;
 4. Compile OpenFOAM-5.x
    ```sh
     # source configuration file
@@ -57,7 +59,7 @@ Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
     # Compile openfoam using all available processors (-j).
     ./Allwmake -j 64
    ```
-   
+   &#13;
 **References:**
 <br>
 <a id="1"></a>[1]: [https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam](https://gitlab.com/arm-hpc/packages/wikis/packages/openfoam)
@@ -66,6 +68,7 @@ Instructions to build OpenFOAM-5.x using ARM compiler on Isambard
 <br>
 <a id="3"></a>[3]: [https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-6.x/CentOS_SL_RHEL](https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-6.x/CentOS_SL_RHEL)
 
+<br>
 **<a id="SectionA"></a>Section A**: Build OpenFOAM-5.x using GNU compiler<sup>[2](#2),[3](#3)</sup> on ARM processors<br>
    ```sh
     # load GNU compiler if no compilers are loaded
