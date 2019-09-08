@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Building codes
-subtitle: simplified..
+subtitle: simplified for novice..
 exclude: true
 ---
 

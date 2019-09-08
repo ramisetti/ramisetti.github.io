@@ -869,7 +869,7 @@ pre {
   line-height: 1.5em;
 }
 pre code {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 pre.highlight, .highlight > pre, td.code pre {
   background: #FAFAFA;
@@ -986,6 +986,10 @@ td.gutter {
     margin-bottom: -2px;
     padding: 3px 8px;
     font-size: 0.8em;
+    
+    /* border-radius: 15px 15px 0 0; */
+    /* transition: .4s; */
+    transition: all ease-in-out 0.05s;
 }
 
 .copy-code-button:hover {

@@ -7,7 +7,8 @@ date: 26/08/2019
 revised: 05/09/2019
 ---
 In this article, I will present easy to follow intructions to build OpenFOAM v1812 with ARM and CRAY-MPICH compilers on Isambard, which is a Tier 2 HPC facility for UK-based researchers<sup>[1](#1)</sup>. Below are the instructions to build OpenFOAM-v1812 with ARM compiler on Isambard HPC.
-<br>
+
+
 1. Download OpenFOAM-v1812 and ThirdParty-v1812
   ```sh
      BUILD_DIR=$HOME/OpenFOAM

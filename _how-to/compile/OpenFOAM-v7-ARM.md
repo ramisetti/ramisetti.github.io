@@ -8,7 +8,8 @@ date: 06/09/2019
 ---
 
 Instructions to build OpenFOAM-v7 with ARM and CRAY-MPICH compiler on Isambard
-<br>
+
+
 1. Download OpenFOAM-7 and ThirdParty-7
    ```sh
      BUILD_DIR=$HOME/OpenFOAM
