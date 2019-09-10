@@ -5,7 +5,7 @@ group: compile
 date: 26/08/2019
 revised: 08/09/2019
 ---
-The intructions to build OpenFOAM (v1812) on ARM based processors using the ARM and CRAY-MPICH compilers are presented. Although OpenFOAM v1812 does come with the compilation rules for the ARM based systems few modifications as mentioned on the ARM developers page<sup>[1](#1),[2](#2)</sup> are still required to build OpenFOAM for better performance. Here the focus is to primarily compile OpenFOAM on the ARMv8-A (64 bit) cores. These instructions presented below are tested on the Cavium ThunderX2 ARM cores available on the Isambard (Phase2), which is a Tier 2 HPC facility for UK-based researchers<sup>[3](#3)</sup>, are presented on this page. The diff-based patch approach is used here to create the patch files that help you update the necessary files instead of editing them manually to avoid any mistakes. 
+The intructions to build OpenFOAM (v1812) on ARM based processors using the ARM and CRAY-MPICH compilers are presented. Although OpenFOAM v1812 does come with the compilation rules for the ARM based systems few modifications as mentioned on the ARM developers page<sup>[1](#1),[2](#2)</sup> are still required to build OpenFOAM for better performance. Here the focus is to primarily compile OpenFOAM on the ARMv8-A (64 bit) cores. These instructions presented below are tested on the Cavium ThunderX2 ARM cores available on the Isambard (Phase2), which is a Tier 2 HPC facility for UK-based researchers<sup>[3](#3)</sup>. The diff-based patch approach is used here to create the patch files that help you update the necessary files instead of editing them manually to avoid any mistakes. 
 
 
 1. Download OpenFOAM-v1812 and ThirdParty-v1812
