@@ -5,8 +5,8 @@ subtitle: linux
 exclude: true
 ---
 
-<div class="how2">
+<div class="how-to">
 {% assign mCollection = "how-to" %}
 {% assign grpNAME = "linux" %}
-{% include how2.html %}
+{% include how-to.html %}
 </div>

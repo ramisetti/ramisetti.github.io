@@ -16,7 +16,7 @@ slider:
     <center><p>Thank you for visiting my webpage!</p></center>
   </div>
 
-<!--  
+<!--
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
@@ -67,6 +67,10 @@ slider:
    </article>
   {% endfor %}
 </div>
+
+ {% if page.social-share %}
+        {% include social-share.html %}
+  {% endif %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">

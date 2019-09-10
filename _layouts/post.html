@@ -49,7 +49,11 @@ layout: base
       {% endif %}
 
       {% if page.social-share %}
-        {% include social-share.html %}
+	<br/>
+	<hr>
+	<div class="share-bar-container">
+          <h5> Share this: {% include social-share.html %} </h5>
+	</div>
       {% endif %}
 
       <ul class="pager blog-pager">

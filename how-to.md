@@ -10,8 +10,8 @@ subtitle: Know how-to..
   <!--<a href="/tags" class="list-filter">Index</a>-->
 </div>
 
-<div class="how2">
+<div class="how-to">
 {% assign mCollection = "how-to" %}
 {% assign grpNAME = "all" %}
-{% include how2.html %}
+{% include how-to.html %}
 </div>

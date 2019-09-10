@@ -1013,3 +1013,8 @@ td.gutter {
     /* Avoid pushing up the copy buttons. */
     margin: 0;
 }
+
+/* social share bar buttons for posts and collections  */
+.share-bar-container {
+    text-align: center;
+}

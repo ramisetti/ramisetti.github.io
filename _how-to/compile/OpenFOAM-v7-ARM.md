@@ -1,5 +1,5 @@
 ---
-layout: how2
+layout: how-to
 title: Compile OpenFOAM v7 with ARM
 subtitle: On Isambard
 group: compile

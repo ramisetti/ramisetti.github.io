@@ -25,7 +25,7 @@ description: For future reference!
 navbar-links:
   About Me: "about"
   Research: "research"
-  # Posts:
+  # Posts: "index"
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
@@ -34,6 +34,7 @@ navbar-links:
   How-to:
     - Building codes: "how-to/compile"
     - Linux tools: "how-to/linux"
+  # TODO: ""
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -123,10 +124,10 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
-  google: false
-  linkedin: false
+  twitter: true
+  facebook: true
+  google: true
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -134,7 +135,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "Admin"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-111674585-1"
@@ -162,6 +163,10 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+# helps to shorten Jekyll build times by only generating
+# pages that were updated since the previous build
+# incremental: false
+
 kramdown:
   input: GFM
 
@@ -177,11 +182,20 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "" # all files
+      path: ""
+      type: "how-to"
     values:
-      layout: "page"
-      show-avatar: true
-
+      layout: "how-to"
+      comments: true  # enable comments to all how-to articles
+      social-share: true # enable social media sharing buttons to all how-to articles
+  -
+    scope:
+      path: "_how-to/*.md"
+    values:
+      layout: ""
+      comments: false  # disable comments to all ToC article pages
+      social-share: false # disable social media sharing buttons to all ToC article pages
+      
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
 

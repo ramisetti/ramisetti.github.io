@@ -2,7 +2,7 @@
 layout: base
 ---
 
-{% include header.html type="howto" %}
+{% include header.html type="how-to" %}
 
 <div class="container">
   <div class="row">
@@ -48,19 +48,23 @@ layout: base
         </div>
       {% endif %}
 
-      {% if page.social-share %}
-        {% include social-share.html %}
+	{% if page.social-share %}
+	<br/>
+	<hr>
+	<div class="share-bar-container">
+          <h5> Share this: {% include social-share.html %} </h5>
+	</div>
       {% endif %}
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Article</a>
+          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Article <br/>{{ page.previous.title }}</a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Article &rarr;</a>
+          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Article &rarr; <br/>{{ page.previous.title }}</a>
         </li>
         {% endif %}
       </ul>
