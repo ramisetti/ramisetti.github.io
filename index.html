@@ -31,7 +31,9 @@ slider:
     </a>
 
     <p class="post-meta">
+      <i class="fa fa-calendar"></i>
       Posted on {{ post.date | date: "%B %-d, %Y" }}
+      <span class="vl-sep"></span> {% include read-time.html content=page.content %}
     </p>
 
     <div class="post-entry-container">

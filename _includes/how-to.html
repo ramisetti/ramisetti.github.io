@@ -12,18 +12,18 @@
 	  <h2 class="post-title">{{ col_page.title }}</h2>
 
 	  {% if col_page.subtitle %}
-	  <!--<h3 class="post-subtitle">
+	  <h3 class="post-subtitle">
 	    {{ col_page.subtitle }}
-	  </h3>-->
+	  </h3>
 	  {% endif %}
     </a>
-
     <p class="post-meta">
+      <i class="fa fa-calendar"></i>
       Published on {{ col_page.date| date: "%B %-d, %Y" }}
       {% if col_page.revised !=null %} 
-      ;  Last Revised on {{col_page.revised | date: "%B %-d, %Y"}}
+      <span class="vl-sep"></span> Revised on {{col_page.revised | date: "%B %-d, %Y"}}
       {% endif %}
-      ; {% include read-time.html content=col_page.content %}
+      <span class="vl-sep"></span>{% include read-time.html content=col_page.content %}
     </p>
 
     <div class="post-entry-container">

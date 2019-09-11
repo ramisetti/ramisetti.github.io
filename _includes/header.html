@@ -55,14 +55,17 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-		  {% endif %}
-		  {% if include.type == "howto" %}
-                  <span class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}
+			<i class="fa fa-calendar"></i>
+			<span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
+			  <span class="vl-sep"></span> {% include read-time.html content=page.content %}
+			</span>
+		  {% elsif include.type == "how-to" %}
+			<i class="fa fa-calendar"></i>
+			<span class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}
 		    {% if page.revised !=null %}
-		    ; Last Revised on : {{page.revised | date: "%B %-d, %Y"}}
+		    <span class="vl-sep"></span> Revised on : {{page.revised | date: "%B %-d, %Y"}}
 		    {% endif %}
-		    ; {% include read-time.html content=page.content %}
+		    <span class="vl-sep"></span> {% include read-time.html content=page.content %}
 		  </span>
                   {% endif %}
         </div>
@@ -88,13 +91,17 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-		  {% endif %}
-		  {% if include.type == "howto" %}
+			<i class="fa fa-calendar"></i>
+			<span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
+			  <span class="vl-sep"></span> {% include read-time.html content=page.content %}
+			</span>
+			{% elsif include.type == "how-to" %}
+			<i class="fa fa-calendar"></i>
                   <span class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}
 		    {% if page.revised !=null %}
-                    ; Last Revised on {{page.revised | date: "%B %-d, %Y"}}
+                    <span class="vl-sep"></span> Revised on {{page.revised | date: "%B %-d, %Y"}}
                     {% endif %}
+                    <span class="vl-sep"></span> {% include read-time.html content=page.content %}
 		  </span>
                   {% endif %}
         </div>
