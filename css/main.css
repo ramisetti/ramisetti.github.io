@@ -1029,3 +1029,54 @@ td.gutter {
   margin-left: 2px;
   margin-right: 5px;
 }
+
+/* preavious-next links for post/collections */
+
+.read {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 27px;
+  /*border-top: 1px solid #ccc;*/
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.read--prev {
+    width: 48%;
+    text-align: left;
+    float: left;
+}
+
+.read--next {
+    width: 48%;
+    text-align: right;
+    float: right;
+}
+
+.read a:hover   {
+  text-decoration:  none;
+  font-weight:      bold;
+  color: red;  
+}
+
+.read a {
+  text-decoration: none;
+  margin: 0;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "franklin-gothic-urw-cond","Arial Narrow",Arial,sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.read a:hover span {
+  color: black;
+  /* color:            #0085a1; */
+}

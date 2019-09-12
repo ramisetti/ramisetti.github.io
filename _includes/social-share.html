@@ -7,9 +7,13 @@
 {% endfor %}
 
 {% if any-share-links %}
+<br/>
+<hr>
+<div class="share-bar-container">
 <section id = "social-share-section">
-  <span class="sr-only">Share: </span>
-
+ <!-- <span class="sr-only">Share: </span> -->
+  Share on
+  </br>
   {% if site.share-links-active.twitter %}
   <!--- Share on Twitter -->
     <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
@@ -47,5 +51,5 @@
   {% endif %}
 
 </section>
-
+</div>
 {% endif %}
