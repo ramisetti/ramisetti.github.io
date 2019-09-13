@@ -9,11 +9,23 @@
 {% if any-share-links %}
 <br/>
 <hr>
+
+<!-- LikeBtn.com BEGIN -->
+<div class="likeBTN">
+  Was this <span style="text-transform:lowercase;">{{include.name}} </span> helpful?
+<span class="likebtn-wrapper" data-theme="custom" data-white_label="true" data-rich_snippet="true" data-counter_type="percent" data-share_enabled="false"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+</br>
+</div>
+
+<!-- LikeBtn.com END -->
+
+
+<!-- Social share bar  -->
 <div class="share-bar-container">
 <section id = "social-share-section">
- <!-- <span class="sr-only">Share: </span> -->
-  Share on
-  </br>
+  Share on&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- </br> -->
   {% if site.share-links-active.twitter %}
   <!--- Share on Twitter -->
     <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
@@ -49,7 +61,6 @@
       <span class="sr-only">LinkedIn</span>
     </a>
   {% endif %}
-
 </section>
 </div>
 {% endif %}

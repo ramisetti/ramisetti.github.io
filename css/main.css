@@ -1017,6 +1017,11 @@ td.gutter {
 /* social share bar buttons for posts and collections  */
 .share-bar-container {
     text-align: center;
+    color: #808080;
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 0 10px;    
 }
 
 /* vertical line separator*/
@@ -1079,4 +1084,13 @@ td.gutter {
 .read a:hover span {
   color: black;
   /* color:            #0085a1; */
+}
+
+.likeBTN {
+    color: #808080;
+    text-align:center;
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 0 10px;
 }
