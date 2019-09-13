@@ -1018,10 +1018,10 @@ td.gutter {
 .share-bar-container {
     text-align: center;
     color: #808080;
-    line-height: 20px;
+    line-height: 24px;
     font-size: 18px;
     font-style: italic;
-    margin: 0 0 10px;    
+    margin: 0px 0px -10px;    
 }
 
 /* vertical line separator*/
@@ -1089,8 +1089,9 @@ td.gutter {
 .likeBTN {
     color: #808080;
     text-align:center;
-    line-height: 20px;
+    line-height: 24px;
     font-size: 18px;
     font-style: italic;
-    margin: 0 0 10px;
+    margin: 0px 0px 10px;
+    align: middle;
 }

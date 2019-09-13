@@ -12,20 +12,28 @@
 
 <!-- LikeBtn.com BEGIN -->
 <div class="likeBTN">
-  Was this <span style="text-transform:lowercase;">{{include.name}} </span> helpful?
-<span class="likebtn-wrapper" data-theme="custom" data-white_label="true" data-rich_snippet="true" data-share_enabled="false"></span>
+  <table align="center">
+  <tr>
+    <td>
+    Was this <span style="text-transform:lowercase;">{{include.name}} </span> helpful?
+    </td>
+    <td>
+<span class="likebtn-wrapper" data-theme="custom" data-icon_l="sgn10-t" data-icon_d="sgn10-c" data-icon_l_c_v="#0535fb" data-icon_d_c_v="#0535fb" data-bg_c="rgba(250,250,250,0.03)" data-bg_c_v="rgba(250,250,250,0.03)" data-brdr_c="rgba(250,250,250,0.03)" data-i18n_like="Yes" data-white_label="true" data-rich_snippet="true" data-show_dislike_label="true" data-counter_frmt="km" data-popup_disabled="true" data-share_enabled="false" data-tooltip_enabled="false" data-i18n_dislike="No" data-i18n_after_like="Yes" data-i18n_after_dislike="No"></span>
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-</br>
+    </td>
+  </tr>
+  </table>
 </div>
-
 <!-- LikeBtn.com END -->
 
-
 <!-- Social share bar  -->
+</br>
 <div class="share-bar-container">
-<section id = "social-share-section">
-  Share on&nbsp;&nbsp;&nbsp;&nbsp;
-  <!-- </br> -->
+  <section id = "social-share-section">
+    <td>
+      Share on&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
   {% if site.share-links-active.twitter %}
   <!--- Share on Twitter -->
     <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
@@ -60,7 +68,8 @@
       <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
     </a>
-  {% endif %}
+    {% endif %}
+    	</td>
 </section>
 </div>
 {% endif %}
