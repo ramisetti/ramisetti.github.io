@@ -37,7 +37,7 @@ The intructions to build OpenFOAM (v1812) on ARM based processors using the ARM 
     # create prefs.sh file with compiler options
     cd $BUILD_DIR/OpenFOAM-v1812
     # please note **cray-mpich** module is loaded by default in my case
-    echo -e "WM_COMPILER=Arm \nWM_MPLIB=CRAY-MPICH \nWM_LABEL_SIZE=64" > $BUILD_DIR/etc/prefs.sh
+    echo -e "WM_COMPILER=Arm \nWM_MPLIB=CRAY-MPICH \nWM_LABEL_SIZE=64" > $BUILD_DIR/OpenFOAM-v1812/etc/prefs.sh
   ```
   &#13;
 4. Compile OpenFOAM-v1812
