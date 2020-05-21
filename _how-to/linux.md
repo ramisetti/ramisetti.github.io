@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Linux tools
-subtitle: with unusual commands..
+subtitle: simplified
 exclude: true
 ---
 
