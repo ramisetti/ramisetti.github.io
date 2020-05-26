@@ -8,7 +8,7 @@ date: 20/05/2020
 ---
 # Use ssh-keys for secured logging and file transfer
 
-1. Create RSA key pair[1,2] by typing the below command in terminal
+1. Create RSA key pair<sup>[1](#1),[2](#2)</sup> by typing the below command in terminal
    ```sh
     ssh-keygen -t rsa -b 4096
    ```

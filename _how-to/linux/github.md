@@ -9,7 +9,7 @@ date: 20/05/2020
 # Less commonly used git commands
 
 
-1. To clone from pull request XXX[1] type the below commands into the terminal
+1. To clone from pull request XXX<sup>[1](#1)</sup> type the below commands into the terminal
    ```sh
     # git clone link-to-master-branch
     # change directory to master-branch
