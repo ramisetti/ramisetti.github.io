@@ -17,9 +17,6 @@ date: 16/06/2020
    ```sh
    find . -type f -exec sed -i 's/foo/bar/g' {} +
    ```
-   ```sh
-    Enter passphrase (empty for no passphrase):
-   ```
    &#13;
 
 **References:**
