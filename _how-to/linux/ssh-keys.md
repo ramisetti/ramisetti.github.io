@@ -27,6 +27,12 @@ date: 20/05/2020
    ```
    &#13;
 
+Following the above steps should allow the user to login to a remote server without entering any password except the passpharse used to set the ssh keys. Sometimes there could be instances where the user will be prompted to enter the password even after following the above steps. In such cases, the user has to login to the remote server and change the permissions of the .ssh directory in their home directory.
+   ```sh
+    chmod 700 ~/.ssh 
+   ```
+   &#13;
+
 **References:**
 
 1. https://www.ssh.com/ssh/keygen/
