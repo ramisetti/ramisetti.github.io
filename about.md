@@ -1,10 +1,22 @@
 ---
 layout: page
-title: About Me
-subtitle: Short Biography
+title: About
+subtitle: Motivation
 ---
 
-I am Srinivasa Ramisetti working as a Principal Scientist in the Theoretical and Computational Mechanics Laboratory at CSIR - Structural Engineering Research Centre, Chennai, India. Before moving to SERC, I worked as a research fellow at University of Exeter, UK (2019) and at the University of Leeds, UK (2017-2019) where I worked on molecular and multiscale simulations of enhanced oil recovery problems. Previously I worked as a research associate at the University of Edinburgh, UK (2014-2017) where I was involved in molecular simulations of liquid slip over carbon nanotube coatings and software development of multiscale codes for micro/nano fluid problems. I recieved my Ph.D in Structures from Swiss Federal Institute of Technology Lausanne in 2013. Prior to this, I worked as a software engineer at AutoForm Engineering India Pvt Ltd, Hyderabad.
+# Motivation
+This webpage will be primarily used to share material related to my research and other notes related to opensource code for future reference. Hope this material may be helpful to others as well. 
 
-Here, I will primarily be sharing material related to my research and other notes related to opensource code for future reference. Hope this material may be helpful to others as well. 
+# Current Position
+Principal Scientist, Theoretical and Computational Mechanics Laboratory, CSIR - Structural Engineering Research Centre, Chennai, India (2020 - present)
+
+# Work Experience
+ - Research Fellow, University of Exeter, UK (2019)
+ - Research Fellow, University of Leeds, UK (2017 - 2019). Worked on molecular and multiscale simulations of enhanced oil recovery problems
+ - Research Associate, University of Edinburgh, UK 2014 - 2017. Worked on molecular simulations of liquid slip over carbon nanotube coatings and software development of multiscale codes for micro/nano fluid problems
+ - Software Engineer, AutoForm Engineering India Pvt Ltd, India (2006-2009)
+
+# Education
+Ph.D. in Structures, Swiss Federal Institute of Technology Lausanne, Switzerland (2009-2013)
+
 
