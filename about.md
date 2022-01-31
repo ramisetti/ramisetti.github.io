@@ -5,7 +5,7 @@ subtitle: Motivation
 ---
 
 # Motivation
-This webpage will be primarily used to share material related to my research and other notes related to opensource code for future reference. Hope this material may be helpful to others as well. 
+This webpage will be primarily used for future reference to material related to my research and other notes related to opensource code that I use on a regular basis. Hope this material may be helpful to others as well. 
 
 # Current Position
 Principal Scientist, Theoretical and Computational Mechanics Laboratory, CSIR - Structural Engineering Research Centre, Chennai, India (2020 - present)
